@@ -12,7 +12,7 @@ class MainWindow:
         self.window = ctk.CTk()
 
         self.window.title("SA-RWA Validator")
-        self.window.geometry("900x600")
+        self.window.geometry("1024x768")
 
         self.create_widgets()
 
