@@ -1,0 +1,106 @@
+SA-RWA Validator
+
+├── Sovereign
+
+├── Bank
+
+├── Corporate
+
+├── Retail
+
+├── Residential Mortgage
+
+├── Commercial Real Estate
+
+├── Equity
+
+├── CIU
+
+├── Default
+
+├── CRM
+
+└── CCF
+
+
+사용자
+
+↓
+
+Excel Upload
+
+↓
+
+Input Parser
+
+↓
+
+Validation Engine
+
+↓
+
+Bank Validator
+
+↓
+
+Result Generator
+
+↓
+
+Excel Report
+
+
+sa-rwa-validator/
+
+│
+├── main.py                 # 프로그램 시작
+│
+├── ui/
+│   ├── main_window.py
+│   └── widgets.py
+│
+├── core/
+│   ├── excel_reader.py
+│   ├── validator_engine.py
+│   └── report_generator.py
+│
+├── validators/
+│   └── bank_validator.py
+│
+├── rules/
+│   └── bank_rules.py
+│
+├── models/
+│   └── exposure.py
+│
+├── config/
+│
+├── input/
+│
+├── output/
+│
+├── tests/
+│
+└── requirements.txt
+
+Input
+
+↓
+
+Exposure 분류
+
+↓
+
+Validator 선택
+
+↓
+
+Rule 수행
+
+↓
+
+Validation Result 생성
+
+↓
+
+Report 생성
