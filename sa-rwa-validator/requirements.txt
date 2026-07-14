@@ -1,57 +1,34 @@
 SA-RWA Validator
 
 ├── Sovereign
-
 ├── Bank
-
 ├── Corporate
-
 ├── Retail
-
 ├── Residential Mortgage
-
 ├── Commercial Real Estate
-
 ├── Equity
-
 ├── CIU
-
 ├── Default
-
 ├── CRM
-
 └── CCF
 
 
 사용자
-
 ↓
-
 Excel Upload
-
 ↓
-
 Input Parser
-
 ↓
-
 Validation Engine
-
 ↓
-
 Bank Validator
-
 ↓
-
 Result Generator
-
 ↓
-
 Excel Report
 
 
 sa-rwa-validator/
-
 │
 ├── main.py                 # 프로그램 시작
 │
@@ -84,23 +61,13 @@ sa-rwa-validator/
 └── requirements.txt
 
 Input
-
 ↓
-
 Exposure 분류
-
 ↓
-
 Validator 선택
-
 ↓
-
 Rule 수행
-
 ↓
-
 Validation Result 생성
-
 ↓
-
 Report 생성
