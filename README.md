@@ -90,40 +90,37 @@ Excel Report 생성
 
 # 프로젝트 구조
 
-```text
 sa-rwa-validator/
-
-main.py
-
-app/
+│
+├── main.py                 # 프로그램 시작
 │
 ├── ui/
+│   ├── main_window.py
+│   └── widgets.py
 │
-├── common/
+├── core/
 │   ├── excel_reader.py
-│   ├── excel_writer.py
-│   └── logger.py
+│   ├── validator_engine.py
+│   └── report_generator.py
 │
-├── bank/
-│   ├── validator.py
-│   ├── calculator.py
-│   ├── rules.py
-│   └── model.py
+├── validators/
+│   └── bank_validator.py
 │
-├── corporate/
+├── rules/
+│   └── bank_rules.py
 │
-├── retail/
+├── models/
+│   └── exposure.py
 │
-├── ciu/
+├── config/
 │
-├── report/
+├── input/
 │
-└── config/
-
-input/
-output/
-tests/
-```
+├── output/
+│
+├── tests/
+│
+└── requirements.txt
 
 ---
 
@@ -140,7 +137,7 @@ tests/
 
 # 개발 환경
 
-* Python 3.12+
+* Python 3.14+
 * pandas
 * openpyxl
 * CustomTkinter
@@ -149,17 +146,19 @@ tests/
 
 # 버전 관리
 
-| Version | Description                 |
-| ------- | --------------------------- |
-| v0.1    | 프로젝트 생성                     |
-| v0.2    | Excel 업로드                   |
-| v0.3    | Bank Validator              |
-| v0.4    | Risk Weight Validation      |
-| v0.5    | Excel Report                |
+| Version | Description                  |
+| ------- | ---------------------------  |
+| v0.1    | 프로젝트 생성                  |
+| v0.2    | Excel 업로드                  |
+| v0.3    | Bank Validator               |
+| v0.4    | Risk Weight Validation       |
+| v0.5    | Excel Report                 |
 | v1.0    | Bank Exposure Validation 완료 |
 
 ---
 
 # 최종 목표
 
-표준방법(Standardised Approach) 전체 자산군에 대한 독립적인 RWA 검증 플랫폼을 구축하여 규제 요건별 검증 결과와 오류 원인을 자동으로 제공하는 업무 지원 도구를 개발한다.
+표준방법(Standardised Approach) 대상 전체 자산군에 대한 독립적인 RWA 검증 플랫폼을 구축하여 규제 요건별 검증 결과와 오류 원인을 자동으로 제공하는 업무 지원 도구를 개발한다.
+
+

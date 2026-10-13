@@ -57,6 +57,7 @@ class BankRules:
         balance = float(row["잔액"])
         undrawn = float(row["미사용한도"])
         ccf = float(row["CCF"])
+        
 
         return balance + (undrawn * ccf)
 
@@ -64,3 +65,4 @@ class BankRules:
     def calculate_rwa(ead, risk_weight):
 
         return ead * risk_weight
+    

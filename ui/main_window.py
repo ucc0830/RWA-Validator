@@ -17,7 +17,7 @@ class MainWindow:
         # Window
         self.window = ctk.CTk()
         self.window.title("SA-RWA Validator")
-        self.window.geometry("1100x750")
+        self.window.geometry("1024x650")
 
         self.df = None
 
